@@ -131,7 +131,7 @@
       flex-direction: column;
       gap: 8px;
       align-items: flex-end;
-      margin-top: 4px;
+      margin-top: 24px;
     }
 
     .photo {
@@ -146,6 +146,7 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
       align-self: start;
       justify-self: end;
+      animation: float 6s ease-in-out infinite;
     }
 
 
@@ -154,6 +155,12 @@
       height: 100%;
       object-fit: cover;
       display: block;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px) rotateX(0deg); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); }
+      50% { transform: translateY(-10px) rotateX(1deg); box-shadow: 0 16px 28px rgba(0, 0, 0, 0.12); }
+      100% { transform: translateY(0px) rotateX(0deg); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); }
     }
 
     main {
@@ -309,7 +316,7 @@
 
       .side-column {
         gap: 6px;
-        margin-top: 2px;
+        margin-top: 12px;
       }
 
       .photo {
@@ -320,6 +327,7 @@
         border-radius: 12px;
         align-self: start;
         justify-self: end;
+        animation: float 6s ease-in-out infinite;
       }
 
       .identity h1 {
@@ -622,9 +630,7 @@
               <span class="pill">Jest</span>
               <span class="pill">Postman</span>
               <span class="pill">SendGrid</span>
-              <span class="pill">Chart.js</span>
-              <span class="pill">Bootstrap 5</span>
-              <span class="pill">html5-qrcode</span>
+              <span class="pill">Figma</span>
             </div>
           </div>
         </div>
